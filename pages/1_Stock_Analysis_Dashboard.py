@@ -3,6 +3,9 @@ import requests
 import pandas as pd
 import plotly.graph_objects as go
 from datetime import datetime
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
 from functions import (
     safe_api_call,
     reset_key_index,
@@ -181,3 +184,4 @@ with st.expander("How to Use This Dashboard"):
 
     Shows price, charts, volume, and stats.
     """)
+
